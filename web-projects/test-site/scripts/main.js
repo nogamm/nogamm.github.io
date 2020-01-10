@@ -18,7 +18,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.textContent = '宝石の国 はすばらしいよ、' + myName;
+    myHeading.textContent = 'フォス はいいよ、' + myName;
   }
 }
 
@@ -26,7 +26,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.textContent = '宝石の国 はすばらしいよ、' + storedName;
+  myHeading.textContent = 'フォス はいいよ、' + storedName;
 }
 
 myButton.onclick = function() {
